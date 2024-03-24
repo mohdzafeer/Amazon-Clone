@@ -1,5 +1,5 @@
 import { loadStripe } from "@stripe/stripe-js";
-import { useSession } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import React, { useEffect, useState } from "react";
 import { SiMediamarkt } from "react-icons/si";
 import { useDispatch, useSelector } from "react-redux";
@@ -23,8 +23,6 @@ const CardPayment = () => {
   );
   const { data: session } = useSession();
 
-
-
   const handleCheckOut = async () => {
     const stripe = await stripPromise;
 
@@ -41,12 +39,12 @@ const CardPayment = () => {
     const checkoutSession = await response.json();
 
     // Redirect user/customer to Stripe checkout
-    const result:any = await stripe?.redirectToCheckout({
+    const result: any = await stripe?.redirectToCheckout({
       sessionId: checkoutSession.id,
     });
-  if(result?.error){
-    alert(result?.error.message)
-  }
+    if (result?.error) {
+      alert(result?.error.message);
+    }
   };
 
   return (
@@ -79,8 +77,15 @@ const CardPayment = () => {
           <button className="w-full h-10 text-sm font-semibold bg-amazon_blue bg-opacity-50 text-white rounded-lg cursor-not-allowed ">
             Proceed to Buy
           </button>
-          <p className="text-sm mt-3 text-red-500 font-semibold animate-pulse">
-            Please Login to continue
+          <p className="text-sm mt-3 text-red-500 font-semibold lg:text-lg md:text-lg sm:text-sm">
+            Please{" "}
+            <span
+              onClick={() => signIn()}
+              className="text-sm mt-3 text-red-500 font-semibold cursor-pointer hover:underline duration-200 lg:text-lg md:text-lg sm:text-sm"
+            >
+              Login
+            </span>{" "}
+            to continue
           </p>
         </div>
       )}

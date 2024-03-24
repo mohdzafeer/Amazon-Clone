@@ -1,4 +1,4 @@
-import { removeUser, resetCart } from "@/store/nextSlice";
+import { removeUser, resetCart, resetFavList } from "@/store/nextSlice";
 import { signOut } from "next-auth/react";
 import { LuMenu } from "react-icons/lu";
 import { useDispatch, useSelector } from "react-redux";
@@ -12,6 +12,7 @@ export default function BottomHeader() {
     signOut();
     dispatch(removeUser(userInfo));
     dispatch(resetCart());
+    dispatch(resetFavList());
   };
 
   return (

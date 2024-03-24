@@ -86,7 +86,7 @@ export default function Header() {
         </div>
       )}
       {/* favorite */}
-      <div className="text-white font-medium cursor-pointer hidden lg:inline-flex flex-col md:inline-flex md:text-sm hover:text-amazon_yellow duration-500">
+      <Link href={'/favorite'} className="text-white font-medium cursor-pointer hidden lg:inline-flex flex-col md:inline-flex md:text-sm hover:text-amazon_yellow duration-500">
         <p>Marked</p>
         <p className="font-bold">
           & Favorite
@@ -96,7 +96,7 @@ export default function Header() {
             </span>
           )}
         </p>
-      </div>
+      </Link>
       {/* cart */}
       <Link
         href="/cart"
