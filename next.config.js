@@ -1,11 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir:"build",
   reactStrictMode: true,
-  output:"export ",
   images: {
-    domains: ['i.ibb.co'],
+    domains: ["i.ibb.co"],
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
