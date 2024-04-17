@@ -20,6 +20,7 @@ export default function Header() {
   );
   const dispatch = useDispatch();
   useEffect(() => {
+    // const dispatch = useDispatch();
     if (session) {
       dispatch(
         addUser({
@@ -65,7 +66,7 @@ export default function Header() {
         
           className="flex items-center px-2 cursor-pointer h-[70%] gap-1"
         >
-          <img src={userInfo.image} alt="user image" className="w-8 h-8 rounded-full object-cover"></img>
+          <Image unoptimized src={userInfo.image}  width={40} height={40} alt="user image" className=" rounded-full object-cover"></Image>
           <div className="text-xs text-gray-100 flex flex-col justify-between">
             <p className="text-white font-bold hidden lg:inline-flex">{userInfo.name}</p>
             <p className="hidden lg:inline-flex">{userInfo.email}</p>
@@ -113,3 +114,12 @@ export default function Header() {
     </div>
   );
 }
+
+
+
+// "eslint-import-resolver-node": "^0.3.6",
+//     "eslint-import-resolver-typescript": "^3.5.2",
+//     "eslint-plugin-import": "^2.28.1",
+//     "eslint-plugin-jsx-a11y": "^6.7.1",
+//     "eslint-plugin-react": "^7.33.2",
+//     "eslint-plugin-react-hooks": "^4.5.0 || 5.0.0-canary-7118f5dd7-20230705",
