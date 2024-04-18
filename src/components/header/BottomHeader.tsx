@@ -66,7 +66,7 @@ export default function BottomHeader() {
             notifyLogOut();
           }
           }
-          className="flex items-center h-8 px-2 cursor-pointer text-amazon_yellow active:text-yellow-600 justify-center"
+          className="flex items-center h-8 px-2 cursor-pointer text-amazon_yellow active:text-yellow-600 justify-center hover:text-red-500 duration-300 hover:font-semibold"
         >
           Sign Out
         </button>
