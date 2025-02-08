@@ -55,7 +55,7 @@ const CardPayment = () => {
         </span>
         <p className="text-sm">
           Your order qualifies for{" "}
-          <span className="text-amazon_yellow font-semibold">FREE</span>{" "}
+          <span className="text-blue-400 font-semibold">FREE</span>{" "}
           shipping by choosing this option at checkout .See deatils...
         </p>
       </div>
@@ -67,7 +67,7 @@ const CardPayment = () => {
         <div>
           <button
             onClick={handleCheckOut}
-            className="w-full h-10 text-sm font-bold bg-amazon_yellow bg-opacity-100 text-black rounded-lg cursor-pointer hover:bg-yellow-500 active:bg-yellow-600 shadow hover:shadow-xl duration-300"
+            className="w-full h-10 text-sm font-bold bg-blue-400 bg-opacity-100 text-black rounded-lg cursor-pointer hover:bg-blue-500 active:bg-blue-600 shadow hover:shadow-xl duration-300"
           >
             Proceed to Buy
           </button>

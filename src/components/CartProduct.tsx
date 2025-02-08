@@ -97,7 +97,7 @@ const CartProduct = ({ item }: cartProductsProps) => {
 
             <div
               onClick={() => dispatch(deletProduct(item._id))}
-              className="flex items-center gap-2 bg-amazon_yellow rounded-full font-semibold text-sm px-2 py-1 cursor-pointer shadow-lg shadow-gray-300 hover:bg-yellow-500 duration-300 mt-2 active:bg-yellow-600"
+              className="flex items-center gap-2 bg-blue-400 rounded-full font-semibold text-sm px-2 py-1 cursor-pointer shadow-lg shadow-gray-300 hover:bg-blue-500 duration-300 mt-2 active:bg-blue-600"
             >
               <IoMdClose />
               <p>Remove</p>

@@ -11,7 +11,7 @@ const ResetList = () => {
         }
     }
   return (
-    <button onClick={handleResetCart} className='w-44 h-10 font-semibold bg-gray-200 rounded-lg hover:bg-amazon_yellow duration-300
+    <button onClick={handleResetCart} className='w-44 h-10 font-semibold bg-gray-200 rounded-lg hover:bg-blue-500 hover:text-white duration-300
     '>Reset Favorite List</button>
   )
 }

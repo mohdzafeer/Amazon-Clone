@@ -40,7 +40,7 @@ const CartPage = () => {
               <div>
                 <Link
                   href={"/cart"}
-                  className="flex  items-center  justify-center rounded-lg active:bg-yellow-500 hover:bg-amazon_yellow bg-gray-200 text-xl px-3 py-2 font-bold gap-2 duration-300 border-black border"
+                  className="flex  items-center  justify-center rounded-lg active:bg-blue-400 hover:bg-blue-500 bg-gray-200 text-xl px-3 py-2 font-bold gap-2 duration-300 border-black border"
                 >
                   Go to Cart <IoCart />
                 </Link>
@@ -52,7 +52,7 @@ const CartPage = () => {
             <h1 className="text-lg font-medium">Your Favorite List is Empty</h1>
 
             <Link
-              className="w-52 h-10 bg-amazon_blue text-white rounded-lg text-sm font-semibold hover:bg-amazon_yellow hover:text-black duration-300 flex justify-center items-center mt-5 hover:font-bold"
+              className="w-52 h-10 bg-amazon_blue text-white rounded-lg text-sm font-semibold hover:bg-blue-400 hover:text-black duration-300 flex justify-center items-center mt-5 hover:font-bold"
               href="/"
             >
               Go to Shopping
@@ -66,7 +66,7 @@ const CartPage = () => {
             <p>
               You have something in your Cart{" "}
               <Link
-                className="text-amazon_yellow hover:text-yellow-500  font-semibold hover:underline duration-200 animate-pulse"
+                className="text-blue-400 hover:text-blue-500  font-semibold hover:underline duration-200 animate-pulse"
                 href={"/cart"}
               >
                 Checkout now

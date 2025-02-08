@@ -40,33 +40,43 @@ export default function BottomHeader() {
       className="w-full h-10 bg-amazon_light text-sm text-white px-4
          flex items-center"
     >
-      <p className="flex items-center gap-1 h-8 px-2 mr-2 cursor-pointer hover:text-amazon_yellow duration-500">
+      <p className="flex items-center gap-1 h-8 px-2 mr-2 cursor-pointer hover:text-blue-400 duration-500">
         <LuMenu className="text-xl " />
         All
       </p>
-      <p className="hidden md:inline-flex items-center h-8 px-2 cursor-pointer hover:text-amazon_yellow duration-500">
+      <p className="hidden md:inline-flex items-center h-8 px-2 cursor-pointer hover:text-blue-400 duration-500">
         Today Deals
       </p>
-      <p className="hidden md:inline-flex items-center h-8 px-2 cursor-pointer hover:text-amazon_yellow duration-500">
+      <p className="hidden md:inline-flex items-center h-8 px-2 cursor-pointer hover:text-blue-400 duration-500">
         Customer Service
       </p>
-      <p className="hidden md:inline-flex items-center h-8 px-2 cursor-pointer hover:text-amazon_yellow duration-500">
+      <p className="hidden md:inline-flex items-center h-8 px-2 cursor-pointer hover:text-blue-400 duration-500">
         Registry
       </p>
-      <p className="hidden md:inline-flex items-center h-8 px-2 cursor-pointer hover:text-amazon_yellow duration-500">
+      <p className="hidden md:inline-flex items-center h-8 px-2 cursor-pointer hover:text-blue-400 duration-500">
         Gift Cards
       </p>
-      <p className="hidden md:inline-flex items-center h-8 px-2 cursor-pointer hover:text-amazon_yellow duration-500">
+      <p className="hidden md:inline-flex items-center h-8 px-2 cursor-pointer hover:text-blue-400 duration-500">
         Sale
       </p>
       {userInfo && (
+        // <button
+        //   onClick={() => {
+        //     handleSignout();
+        //     notifyLogOut();
+        //   }
+        //   }
+        //   className="flex items-center h-8 px-2 cursor-pointer text-amazon_yellow active:text-yellow-600 justify-center hover:text-red-500 duration-300 hover:font-semibold"
+        // >
+        //   Sign Out
+        // </button>
         <button
           onClick={() => {
             handleSignout();
             notifyLogOut();
           }
           }
-          className="flex items-center h-8 px-2 cursor-pointer text-amazon_yellow active:text-yellow-600 justify-center hover:text-red-500 duration-300 hover:font-semibold"
+          className="flex items-center h-8 px-2 cursor-pointer text-blue-400 active:text-blue-500 justify-center hover:text-red-500 duration-300 hover:font-semibold"
         >
           Sign Out
         </button>

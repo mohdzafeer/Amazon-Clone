@@ -105,7 +105,7 @@ const FavProduct = ({ item }: cartProductsProps) => {
 
             <div
               onClick={() => dispatch(deletFavProduct(item._id))}
-              className="flex items-center gap-2 bg-amazon_yellow rounded-full font-semibold text-sm px-3 py-2 cursor-pointer shadow-lg shadow-gray-300 hover:bg-yellow-500 duration-300 mt-2 active:bg-yellow-600"
+              className="flex items-center gap-2 bg-blue-100 rounded-full font-semibold text-sm px-3 py-2 cursor-pointer shadow-lg shadow-gray-300 hover:bg-blue-200 duration-300 mt-2 active:bg-blue-300"
             >
               <IoMdClose />
               <p>Remove</p>
@@ -129,7 +129,7 @@ const FavProduct = ({ item }: cartProductsProps) => {
                   })
                 )
               }
-              className="flex items-center gap-2 bg-amazon_yellow rounded-full font-semibold text-sm px-3 py-2 cursor-pointer shadow-lg shadow-gray-300 hover:bg-yellow-500 duration-300 mt-2 active:bg-yellow-600"
+              className="flex items-center gap-2 bg-blue-400 text-white rounded-full font-semibold text-sm px-3 py-2 cursor-pointer shadow-lg shadow-gray-300 hover:bg-blue-500 duration-300 mt-2 active:bg-blue-600"
             >
               Add to Cart <IoMdCart className="text-2xl" />
               
